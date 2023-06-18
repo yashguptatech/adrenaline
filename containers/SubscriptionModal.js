@@ -54,14 +54,27 @@ export default function SubscriptionModal({ setShowSubscriptionModal }) {
                     <p id="modalSubtitle">Understand your code like an expert. Focus on the problems that matter.</p>
 
                     <div id="paymentPlans">
+                        {/* <PaymentPlan
+                            lookupKey="free"
+                            planName="FREE"
+                            price="0"
+                            features={[
+                                "15 chat messages.",
+                                "5 repos.",
+                                "10 code snippets.",
+                                "Support for smaller-sized repos (25K lines of code)."
+                            ]}
+                        />
+                        <div id="spacer" /> */}
                         <PaymentPlan
                             lookupKey="premium_reduced"
                             planName="PREMIUM"
                             price="5"
                             features={[
                                 "100 chat messages.",
-                                "15 repositories.",
-                                "50 code snippets."
+                                "15 repos.",
+                                "50 code snippets.",
+                                "Support for medium-sized repos (50K lines of code)."
                             ]}
                         />
                         <div id="spacer" />
@@ -72,7 +85,17 @@ export default function SubscriptionModal({ setShowSubscriptionModal }) {
                             features={[
                                 "Unlimited chat messages.",
                                 "25 repositories.",
-                                "Unlimited code snippets."
+                                "Unlimited code snippets.",
+                                "Support for larger-sized repos　 (100K lines of code)."
+                            ]}
+                        />
+                        <div id="spacer" />
+                        <PaymentPlan
+                            lookupKey="unlimited_50"
+                            planName="UNLIMITED"
+                            price="50"
+                            features={[
+                                "Unlimited everything."
                             ]}
                         />
                     </div>
